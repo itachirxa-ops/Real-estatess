@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="LIVEST real estate offering premium homes, expert agents, and market insights."
+    />
+    <title>Real Estate</title>
+    <link rel="stylesheet" href="home.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <body>
+    <!-- 1. HEADER NAVIGATION -->
+    <header>
+      <div class="header-left">
+        <label for="sidebar-toggle" class="menu-toggle" aria-label="Open menu">
+          ☰
+        </label>
+        <span class="logo"><h2>LIVEST</h2></span>
+      </div>
+
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li>
+            <a href="#home-cards">Properties</a>
+          </li>
+          <li><a href="#">Loan</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Contact">Contact</a></li>
+          <li><label for="login-modal-toggle" class="login">Login</label></li>
+        </ul>
+      </nav>
+    </header>
+
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-checkbox" />
+    <label
+      for="sidebar-toggle"
+      class="sidebar-backdrop"
+      aria-label="Close menu"
+    ></label>
+    <aside class="sidebar" aria-label="Sidebar navigation">
+      <label for="sidebar-toggle" class="sidebar-close" aria-label="Close menu">
+        ×
+      </label>
+      <div class="sidebar-brand">
+        <span class="sidebar-logo">LIVEST</span>
+        <span class="sidebar-tag">Real Estate</span>
+      </div>
+
+      <h3>Menu</h3>
+      <a href="#">Home</a>
+      <a href="#home-cards">Properties</a>
+
+      <a href="#">Loan</a>
+      <a href="#About">About</a>
+      <a href="#Contact">Contact</a>
+      <label for="login-modal-toggle" class="login">Login</label>
+    </aside>
+
+    <!-- LOGIN MODAL CHECKBOX AND POPUP -->
+    <input type="checkbox" id="login-modal-toggle" class="modal-checkbox" />
+    <div class="login-modal">
+      <div class="modal-content">
+        <label for="login-modal-toggle" class="modal-close">&times;</label>
+        <h2>Login to Your Account</h2>
+        <form class="login-form">
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+          <label class="remember-me">
+            <input type="checkbox" /> Remember me
+          </label>
+          <button type="submit" class="btn-login">Log In</button>
+          <p class="signup-link">
+            Don't have an account? <a href="#">Sign up here</a>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <!-- Per-card purchase modals are added next to each card -->
+
+    <main>
+      <!-- 2. HERO BACKGROUND BANNER CONTAINER -->
+      <div class="hero-banner-container">
+        <div class="home">
+          <h3>Home/Properties</h3>
+        </div>
+        <div class="mid">
+          <h2>Find your perfect <br />investment Properties</h2>
+          <p>
+            Explore a selection of high-value real estate opportunities
+            <br />designed for financial growth and stability
+          </p>
+        </div>
+        <div class="box">
+          <select class="Any" name="Any location" id="Any location">
+            <option value="Any Address">Any Location</option>
+            <option value="Phnom Penh">Phon Penh</option>
+            <option value="Serm Reap">Siem Reap</option>
+            <option value="Kos Kong">Kos Kong</option>
+            <option value="Kompot">Kompot</option>
+          </select>
+          <select class="Any" name="Any Type" id="Any Type ">
+            <option value="Any Type">Any Type</option>
+            <option value="Phnom Penh">House</option>
+            <option value="Siemm Reap">Apartment</option>
+            <option value="Kos Kong">Condo</option>
+            <option value="Kompot">Townhouse</option>
+            <option value="Kos Kong">Land</option>
+            <option value="Kompot">Comercial</option>
+          </select>
+          <select class="Any" name="Any Price" id="Any Price">
+            <option value="Any Price">Any Price</option>
+            <option value="Phnom Penh">Under 100k</option>
+            <option value="Siem Reap">10k</option>
+            <option value="Kos Kong">20k</option>
+            <option value="Kompot">10k+</option>
+          </select>
+          <select class="Any" name="Any Price" id="Bedroom">
+            <option value="Any Price">Bedroom</option>
+            <option value="Phnom Penh">1+</option>
+            <option value="Siem Reap">2+</option>
+            <option value="Kos Kong">3+</option>
+            <option value="Kompot">4+</option>
+          </select>
+          <button class="Apply">Apply Filters</button>
+        </div>
+      </div>
+
+      <!-- 3. SPLIT-ROW FEATURES SECTION -->
+      <section class="hero-section" , id="About">
+        <!-- LEFT COLUMN: The House Image -->
+        <div class="hero-image-column">
+          <div class="item">
+            <img
+              src="https://i.pinimg.com/736x/29/13/ee/2913eed873cb4cedc5a4f63a8a7561b8.jpg"
+              alt="Modern Luxury House"
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://i.pinimg.com/1200x/b1/81/d3/b181d310098da369de8d4d71bd98a295.jpg"
+              alt=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://i.pinimg.com/1200x/b6/55/20/b65520076017c79ca019b88f52ec44dc.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN: Text content & Counter Statistics -->
+        <div class="hero-text-column">
+          <h1 class="hero-title">We Help You To Find Your Dream Home</h1>
+          <p class="hero-description">
+            From cozy cottages to luxurious estates, our dedicated team guides
+            you through every step of the journey, ensuring your dream home
+            becomes a reality
+          </p>
+
+          <!-- Stats row container -->
+          <div class="stats-row">
+            <div class="stat-item">
+              <h3 class="stat-number">8K+</h3>
+              <p class="stat-label">Houses Available</p>
+            </div>
+            <div class="stat-item">
+              <h3 class="stat-number">6K+</h3>
+              <p class="stat-label">Houses Sold</p>
+            </div>
+            <div class="stat-item">
+              <h3 class="stat-number">2K+</h3>
+              <p class="stat-label">Trusted Agents</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. GRID SECTION (WHY CHOOSE US) -->
+      <section class="why-choose-us wcu-section">
+        <div class="wcu-header">
+          <h2 class="wcu-title">Why Choose Us</h2>
+          <p class="wcu-subtitle">Begin Your Journey to the Perfect Home</p>
+        </div>
+
+        <div class="wcu-grid">
+          <article class="wcu-card">
+            <div class="wcu-icon">
+              <a href="Apartment.html">
+                <img
+                  src="https://cdn.prod.website-files.com/67e3d45f166e4b0ec621ccf7/682b06150294ce4fb044d5ef_1%20(3).png"
+                  loading="lazy"
+                  alt="Area Category Icon Image"
+              /></a>
+            </div>
+            <h3 class="wcu-card-title">Apartment</h3>
+            <p class="wcu-card-text">5 Properties</p>
+          </article>
+
+          <article class="wcu-card">
+            <div class="wcu-icon">
+              <a href="Commercial.html">
+                <img
+                  src="https://cdn.prod.website-files.com/67e3d45f166e4b0ec621ccf7/682b0bdece3d694cde618468_2%20(2).png"
+                  loading="lazy"
+                  alt="Area Category Icon Image"
+                  class="area-category-icon-image"
+              /></a>
+            </div>
+
+            <h3 class="wcu-card-title">Commercial</h3>
+            <p class="wcu-card-text">5 Properties</p>
+          </article>
+
+          <article class="wcu-card">
+            <div class="wcu-icon">
+              <a href="Soloshop.html">
+                <img
+                  src="https://cdn.prod.website-files.com/67e3d45f166e4b0ec621ccf7/682b0bde66b24cb5145718b9_2%20(1).png"
+                  loading="lazy"
+                  alt="Area Category Icon Image"
+                  class="area-category-icon-image"
+                />
+              </a>
+            </div>
+            <h3 class="wcu-card-title">Solo Shop</h3>
+            <p class="wcu-card-text">5 properties</p>
+          </article>
+
+          <article class="wcu-card">
+            <div class="wcu-icon">
+              <a href="Town-Ship.html">
+                <img
+                  src="https://cdn.prod.website-files.com/67e3d45f166e4b0ec621ccf7/682b06157fb7522b6c08fb8a_1%20(4).png"
+                  loading="lazy"
+                  alt="Area Category Icon Image"
+                  class="area-category-icon-image"
+                />
+              </a>
+            </div>
+            <h3 class="wcu-card-title">Town Ship</h3>
+            <p class="wcu-card-text">5 Properties</p>
+          </article>
+        </div>
+      </section>
+      <section class="home-carrdd">
+        <div class="home-header">
+          <h2 class="home-title">Explore our premuim home</h2>
+          <p class="home-subtitle">
+            Elevating Your Home Buying Experience with Expertise, Integrity, and
+            Unmatched Personalized Service
+          </p>
+        </div>
+      </section>
+
+      <section id="home-cards">
+        <div class="home-grid">
+          <!--product 1-->
+          <article class="home-card">
+            <div class="home-icon">
+              <img
+                src="https://i.pinimg.com/1200x/9a/4d/4b/9a4d4be65c137ce040ef3c85946d130c.jpg"
+                alt=""
+              />
+            </div>
+            <h3 class="home-card-title">Deteached House</h3>
+            <p class="home-card-text">Price <b>$34,000</b></p>
+            <label for="purchase-modal-1" class="buynow">Buy Now</label>
+          </article>
+          <input type="checkbox" id="purchase-modal-1" class="modal-checkbox" />
+          <div class="purchase-modal">
+            <div class="purchase-panel">
+              <label
+                for="purchase-modal-1"
+                class="modal-close"
+                aria-label="Close"
+                >×</label
+              >
+              <div class="product-media">
+                <img
+                  src="https://i.pinimg.com/1200x/9a/4d/4b/9a4d4be65c137ce040ef3c85946d130c.jpg"
+                  alt="Deteached House"
+                />
+              </div>
+              <div class="product-info">
+                <h3>Deteached House</h3>
+                <div class="meta"><a href="#">See all item details</a></div>
+                <div class="product-options">
+                  <label for="qty-1">Qty:</label>
+                  <select id="qty-1" class="qty-select">
+                    <option>1</option>
+                    <option>2</option>
+                  </select>
+                </div>
+                <div class="product-price">
+                  <span class="price-currency">$</span
+                  ><span class="price-amount">34,000</span
+                  ><span class="price-dec">.00</span>
+                </div>
+                <div class="price-breakdown">Delivery options at checkout</div>
+                <div class="product-actions">
+                  <label for="purchase-modal-1" class="btn-ghost">Cancel</label>
+                  <button class="btn-primary" type="button">Buy now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--product 2-->
+          <article class="home-card">
+            <div class="home-icon">
+              <img
+                src="https://i.pinimg.com/1200x/1d/4a/b1/1d4ab1f27e0ca8826a9d42c2a1a59e23.jpg"
+                alt=""
+              />
+            </div>
+            <h3 class="home-card-title">Cozy Cottage</h3>
+            <p class="home-card-text">Price <b>$28,500</b></p>
+            <label for="purchase-modal-2" class="buynow">Buy Now</label>
+          </article>
+          <input type="checkbox" id="purchase-modal-2" class="modal-checkbox" />
+          <div class="purchase-modal">
+            <div class="purchase-panel">
+              <label
+                for="purchase-modal-2"
+                class="modal-close"
+                aria-label="Close"
+                >×</label
+              >
+              <div class="product-media">
+                <img
+                  src="https://i.pinimg.com/1200x/1d/4a/b1/1d4ab1f27e0ca8826a9d42c2a1a59e23.jpg"
+                  alt="Cozy Cottage"
+                />
+              </div>
+              <div class="product-info">
+                <h3>Cozy Cottage</h3>
+                <div class="meta"><a href="#">See all item details</a></div>
+                <div class="product-options">
+                  <label for="qty-2">Qty:</label>
+                  <select id="qty-2" class="qty-select">
+                    <option>1</option>
+                  </select>
+                </div>
+                <div class="product-price">
+                  <span class="price-currency">$</span
+                  ><span class="price-amount">28,500</span
+                  ><span class="price-dec">.00</span>
+                </div>
+                <div class="price-breakdown">Delivery options at checkout</div>
+                <div class="product-actions">
+                  <label for="purchase-modal-2" class="btn-ghost">Cancel</label>
+                  <button class="btn-primary" type="button">Buy now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--product 3-->
+          <article class="home-card">
+            <div class="home-icon">
+              <img
+                src="https://i.pinimg.com/736x/78/ae/7f/78ae7f709031f5287afa7c061b86e725.jpg"
+                alt=""
+              />
+            </div>
+            <h3 class="home-card-title">Modern Villa</h3>
+            <p class="home-card-text">Price <b>$120,000</b></p>
+            <label for="purchase-modal-3" class="buynow">Buy Now</label>
+          </article>
+          <input type="checkbox" id="purchase-modal-3" class="modal-checkbox" />
+          <div class="purchase-modal">
+            <div class="purchase-panel">
+              <label
+                for="purchase-modal-3"
+                class="modal-close"
+                aria-label="Close"
+                >×</label
+              >
+              <div class="product-media">
+                <img
+                  src="https://i.pinimg.com/736x/78/ae/7f/78ae7f709031f5287afa7c061b86e725.jpg"
+                  alt="Modern Villa"
+                />
+              </div>
+              <div class="product-info">
+                <h3>Modern Villa</h3>
+                <div class="meta"><a href="#">See all item details</a></div>
+                <div class="product-options">
+                  <label for="qty-3">Qty:</label>
+                  <select id="qty-3" class="qty-select">
+                    <option>1</option>
+                  </select>
+                </div>
+                <div class="product-price">
+                  <span class="price-currency">$</span
+                  ><span class="price-amount">120,000</span
+                  ><span class="price-dec">.00</span>
+                </div>
+                <div class="price-breakdown">Delivery options at checkout</div>
+                <div class="product-actions">
+                  <label for="purchase-modal-3" class="btn-ghost">Cancel</label>
+                  <button class="btn-primary" type="button">Buy now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--product 4-->
+          <article class="home-card">
+            <div class="home-icon">
+              <img
+                src="https://i.pinimg.com/736x/ee/45/68/ee456817821df621f65812204a406d20.jpg"
+                alt=""
+              />
+            </div>
+            <h3 class="home-card-title">Luxury Apartment</h3>
+            <p class="home-card-text">Price <b>$85,000</b></p>
+            <label for="purchase-modal-4" class="buynow">Buy Now</label>
+          </article>
+          <input type="checkbox" id="purchase-modal-4" class="modal-checkbox" />
+          <div class="purchase-modal">
+            <div class="purchase-panel">
+              <label
+                for="purchase-modal-4"
+                class="modal-close"
+                aria-label="Close"
+                >×</label
+              >
+              <div class="product-media">
+                <img
+                  src="https://i.pinimg.com/736x/ee/45/68/ee456817821df621f65812204a406d20.jpg"
+                  alt="Luxury Apartment"
+                />
+              </div>
+              <div class="product-info">
+                <h3>Luxury Apartment</h3>
+                <div class="meta"><a href="#">See all item details</a></div>
+                <div class="product-options">
+                  <label for="qty-4">Qty:</label>
+                  <select id="qty-4" class="qty-select">
+                    <option>1</option>
+                  </select>
+                </div>
+                <div class="product-price">
+                  <span class="price-currency">$</span
+                  ><span class="price-amount">85,000</span
+                  ><span class="price-dec">.00</span>
+                </div>
+                <div class="price-breakdown">Delivery options at checkout</div>
+
+                <div class="product-actions">
+                  <label for="purchase-modal-4" class="btn-ghost">Cancel</label>
+                  <button class="btn-primary" type="button">Buy now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--product 5-->
+          <article class="home-card">
+            <div class="home-icon">
+              <img
+                src="https://i.pinimg.com/736x/dd/d5/08/ddd508741c9d36af5c92c7f828661339.jpg"
+                alt=""
+              />
+            </div>
+            <h3 class="home-card-title">Townhouse</h3>
+            <p class="home-card-text">Price <b>$56,000</b></p>
+            <label for="purchase-modal-5" class="buynow">Buy Now</label>
+          </article>
+          <input type="checkbox" id="purchase-modal-5" class="modal-checkbox" />
+          <div class="purchase-modal">
+            <div class="purchase-panel">
+              <label
+                for="purchase-modal-5"
+                class="modal-close"
+                aria-label="Close"
+                >×</label
+              >
+              <div class="product-media">
+                <img
+                  src="https://i.pinimg.com/736x/dd/d5/08/ddd508741c9d36af5c92c7f828661339.jpg"
+                  alt="Townhouse"
+                />
+              </div>
+              <div class="product-info">
+                <h3>Townhouse</h3>
+                <div class="meta"><a href="#">See all item details</a></div>
+                <div class="product-options">
+                  <label for="qty-5">Qty:</label>
+                  <select id="qty-5" class="qty-select">
+                    <option>1</option>
+                  </select>
+                </div>
+                <div class="product-price">
+                  <span class="price-currency">$</span
+                  ><span class="price-amount">56,000</span
+                  ><span class="price-dec">.00</span>
+                </div>
+                <div class="price-breakdown">Delivery options at checkout</div>
+                <div class="product-actions">
+                  <label for="purchase-modal-5" class="btn-ghost">Cancel</label>
+                  <button class="btn-primary" type="button">Buy now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--product 6-->
+          <article class="home-card">
+            <div class="home-icon">
+              <img
+                src="https://i.pinimg.com/736x/15/27/28/1527283ff9fd919a601a57a3552d30e6.jpg"
+                alt=""
+              />
+            </div>
+            <h3 class="home-card-title">Seaside Bungalow</h3>
+            <p class="home-card-text">Price <b>$72,000</b></p>
+            <label for="purchase-modal-6" class="buynow">Buy Now</label>
+          </article>
+          <input type="checkbox" id="purchase-modal-6" class="modal-checkbox" />
+          <div class="purchase-modal">
+            <div class="purchase-panel">
+              <label
+                for="purchase-modal-6"
+                class="modal-close"
+                aria-label="Close"
+                >×</label
+              >
+              <div class="product-media">
+                <img
+                  src="https://i.pinimg.com/736x/15/27/28/1527283ff9fd919a601a57a3552d30e6.jpg"
+                  alt="Seaside Bungalow"
+                />
+              </div>
+              <div class="product-info">
+                <h3>Seaside Bungalow</h3>
+                <div class="meta"><a href="#">See all item details</a></div>
+                <div class="product-options">
+                  <label for="qty-6">Qty:</label>
+                  <select id="qty-6" class="qty-select">
+                    <option>1</option>
+                  </select>
+                </div>
+                <div class="product-price">
+                  <span class="price-currency">$</span
+                  ><span class="price-amount">72,000</span
+                  ><span class="price-dec">.00</span>
+                </div>
+                <div class="price-breakdown">Delivery options at checkout</div>
+                <div class="product-actions">
+                  <label for="purchase-modal-6" class="btn-ghost">Cancel</label>
+                  <button class="btn-primary" type="button">Buy now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--product 7-->
+          <article class="home-card">
+            <div class="home-icon">
+              <img
+                src="https://i.pinimg.com/736x/b9/51/9e/b9519e41ccf4519f36af756dc3adbbae.jpg"
+                alt=""
+              />
+            </div>
+            <h3 class="home-card-title">Countryside Farm</h3>
+            <p class="home-card-text">Price <b>$48,000</b></p>
+            <label for="purchase-modal-7" class="buynow">Buy Now</label>
+          </article>
+          <input type="checkbox" id="purchase-modal-7" class="modal-checkbox" />
+          <div class="purchase-modal">
+            <div class="purchase-panel">
+              <label
+                for="purchase-modal-7"
+                class="modal-close"
+                aria-label="Close"
+                >×</label
+              >
+              <div class="product-media">
+                <img
+                  src="https://i.pinimg.com/736x/b9/51/9e/b9519e41ccf4519f36af756dc3adbbae.jpg"
+                  alt="Countryside Farm"
+                />
+              </div>
+              <div class="product-info">
+                <h3>Countryside Farm</h3>
+                <div class="meta"><a href="#">See all item details</a></div>
+                <div class="product-options">
+                  <label for="qty-7">Qty:</label>
+                  <select id="qty-7" class="qty-select">
+                    <option>1</option>
+                  </select>
+                </div>
+                <div class="product-price">
+                  <span class="price-currency">$</span
+                  ><span class="price-amount">48,000</span
+                  ><span class="price-dec">.00</span>
+                </div>
+                <div class="price-breakdown">Delivery options at checkout</div>
+                <div class="product-actions">
+                  <label for="purchase-modal-7" class="btn-ghost">Cancel</label>
+                  <button class="btn-primary" type="button">Buy now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--product 8-->
+          <article class="home-card">
+            <div class="home-icon">
+              <img
+                src="https://i.pinimg.com/1200x/38/71/b0/3871b08705b7738eede1923fe2bb0a21.jpg"
+                alt=""
+              />
+            </div>
+            <h3 class="home-card-title">Mountain Cabin</h3>
+            <p class="home-card-text">Price <b>$39,500</b></p>
+            <label for="purchase-modal-8" class="buynow">Buy Now</label>
+          </article>
+          <input type="checkbox" id="purchase-modal-8" class="modal-checkbox" />
+          <div class="purchase-modal">
+            <div class="purchase-panel">
+              <label
+                for="purchase-modal-8"
+                class="modal-close"
+                aria-label="Close"
+                >×</label
+              >
+              <div class="product-media">
+                <img
+                  src="https://i.pinimg.com/1200x/38/71/b0/3871b08705b7738eede1923fe2bb0a21.jpg"
+                  alt="Mountain Cabin"
+                />
+              </div>
+              <div class="product-info">
+                <h3>Mountain Cabin</h3>
+                <div class="meta"><a href="#">See all item details</a></div>
+                <div class="product-options">
+                  <label for="qty-8">Qty:</label>
+                  <select id="qty-8" class="qty-select">
+                    <option>1</option>
+                  </select>
+                </div>
+                <div class="product-price">
+                  <span class="price-currency">$</span
+                  ><span class="price-amount">39,500</span
+                  ><span class="price-dec">.00</span>
+                </div>
+                <div class="price-breakdown">Delivery options at checkout</div>
+                <div class="product-actions">
+                  <label for="purchase-modal-8" class="btn-ghost">Cancel</label>
+                  <button class="btn-primary" type="button">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--product 9-->
+          <article class="home-card">
+            <div class="home-icon">
+              <img
+                src="https://i.pinimg.com/1200x/67/53/96/6753961138f630d1b62dd02311e83688.jpg"
+                alt=""
+              />
+            </div>
+            <h3 class="home-card-title">City Loft</h3>
+            <p class="home-card-text">Price <b>$336,000</b></p>
+            <label for="purchase-modal-9" class="buynow">Buy Now</label>
+          </article>
+          <input type="checkbox" id="purchase-modal-9" class="modal-checkbox" />
+          <div class="purchase-modal">
+            <div class="purchase-panel">
+              <label
+                for="purchase-modal-9"
+                class="modal-close"
+                aria-label="Close"
+                >×</label
+              >
+              <div class="product-media">
+                <img
+                  src="https://i.pinimg.com/1200x/67/53/96/6753961138f630d1b62dd02311e83688.jpg"
+                  alt="City Loft"
+                />
+              </div>
+              <div class="product-info">
+                <h3>City Loft</h3>
+                <div class="meta"><a href="#">See all item details</a></div>
+                <div class="product-options">
+                  <label for="qty-9">Qty:</label>
+                  <select id="qty-9" class="qty-select">
+                    <option>1</option>
+                  </select>
+                </div>
+                <div class="product-price">
+                  <span class="price-currency">$</span
+                  ><span class="price-amount">336,000</span
+                  ><span class="price-dec">.00</span>
+                </div>
+                <div class="price-breakdown">Delivery options at checkout</div>
+                <div class="product-actions">
+                  <label for="purchase-modal-9" class="btn-ghost">Cancel</label>
+                  <button class="btn-primary" type="button">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--product 10-->
+          <article class="home-card">
+            <div class="home-icon">
+              <img
+                src="https://i.pinimg.com/1200x/43/2d/d7/432dd758a4aecd0b13bac3291f07887c.jpg"
+                alt=""
+              />
+            </div>
+            <h3 class="home-card-title">City Loft</h3>
+            <p class="home-card-text">Price <b>$456,000</b></p>
+            <label for="purchase-modal-10" class="buynow">Buy Now</label>
+          </article>
+          <input
+            type="checkbox"
+            id="purchase-modal-10"
+            class="modal-checkbox"
+          />
+          <div class="purchase-modal">
+            <div class="purchase-panel">
+              <label
+                for="purchase-modal-10"
+                class="modal-close"
+                aria-label="Close"
+                >×</label
+              >
+              <div class="product-media">
+                <img
+                  src="https://i.pinimg.com/1200x/43/2d/d7/432dd758a4aecd0b13bac3291f07887c.jpg"
+                  alt="City Loft"
+                />
+              </div>
+              <div class="product-info">
+                <h3>City Loft</h3>
+                <div class="meta"><a href="#">See all item details</a></div>
+                <div class="product-options">
+                  <label for="qty-10">Qty:</label>
+                  <select id="qty-10" class="qty-select">
+                    <option>1</option>
+                  </select>
+                </div>
+                <div class="product-price">
+                  <span class="price-currency">$</span
+                  ><span class="price-amount">456,000</span
+                  ><span class="price-dec">.00</span>
+                </div>
+                <div class="price-breakdown">Delivery options at checkout</div>
+                <div class="product-actions">
+                  <label for="purchase-modal-10" class="btn-ghost"
+                    >Cancel</label
+                  >
+                  <button class="btn-primary" type="button">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Product 11-->
+          <article class="home-card">
+            <div class="home-icon">
+              <img
+                src="https://i.pinimg.com/736x/a1/a6/97/a1a69758af2f36448f37b6de19a2643a.jpg"
+                alt=""
+              />
+            </div>
+            <h3 class="home-card-title">City Loft</h3>
+            <p class="home-card-text">Price <b>$336,000</b></p>
+            <label for="purchase-modal-11" class="buynow">Buy Now</label>
+          </article>
+          <input
+            type="checkbox"
+            id="purchase-modal-11"
+            class="modal-checkbox"
+          />
+          <div class="purchase-modal">
+            <div class="purchase-panel">
+              <label
+                for="purchase-modal-11"
+                class="modal-close"
+                aria-label="Close"
+                >×</label
+              >
+              <div class="product-media">
+                <img
+                  src="https://i.pinimg.com/736x/a1/a6/97/a1a69758af2f36448f37b6de19a2643a.jpg"
+                  alt="City Loft"
+                />
+              </div>
+              <div class="product-info">
+                <h3>City Loft</h3>
+                <div class="meta"><a href="#">See all item details</a></div>
+                <div class="product-options">
+                  <label for="qty-11">Qty:</label>
+                  <select id="qty-11" class="qty-select">
+                    <option>1</option>
+                  </select>
+                </div>
+                <div class="product-price">
+                  <span class="price-currency">$</span
+                  ><span class="price-amount">336,000</span
+                  ><span class="price-dec">.00</span>
+                </div>
+                <div class="price-breakdown">Delivery options at checkout</div>
+                <div class="product-actions">
+                  <label for="purchase-modal-11" class="btn-ghost"
+                    >Cancel</label
+                  >
+                  <button class="btn-primary" type="button">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Product12-->
+          <article class="home-card">
+            <div class="home-icon">
+              <img
+                src="https://i.pinimg.com/1200x/36/b2/99/36b299a124184ee0b38bc48b69d60786.jpg"
+                alt=""
+              />
+            </div>
+            <h3 class="home-card-title">City Loft</h3>
+            <p class="home-card-text">Price <b>$66,000</b></p>
+            <label for="purchase-modal-12" class="buynow">Buy Now</label>
+          </article>
+          <input
+            type="checkbox"
+            id="purchase-modal-12"
+            class="modal-checkbox"
+          />
+          <div class="purchase-modal">
+            <div class="purchase-panel">
+              <label
+                for="purchase-modal-12"
+                class="modal-close"
+                aria-label="Close"
+                >×</label
+              >
+              <div class="product-media">
+                <img
+                  src="https://i.pinimg.com/1200x/36/b2/99/36b299a124184ee0b38bc48b69d60786.jpg"
+                  alt="City Loft"
+                />
+              </div>
+              <div class="product-info">
+                <h3>City Loft</h3>
+                <div class="meta"><a href="#">See all item details</a></div>
+                <div class="product-options">
+                  <label for="qty-12">Qty:</label>
+                  <select id="qty-12" class="qty-select">
+                    <option>1</option>
+                  </select>
+                </div>
+                <div class="product-price">
+                  <span class="price-currency">$</span
+                  ><span class="price-amount">66,000</span
+                  ><span class="price-dec">.00</span>
+                </div>
+                <div class="price-breakdown">Delivery options at checkout</div>
+                <div class="product-actions">
+                  <label for="purchase-modal-12" class="btn-ghost"
+                    >Cancel</label
+                  >
+                  <button class="btn-primary" type="button">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--slideshow section1-->
+      <div class="forrent">For rent</div>
+      <div class="new-rent">
+        Find Your Next Home We make it easy to find your perfect fit with over a
+        million available rentals.
+      </div>
+      <div class="slidershow">
+        <div
+          class="slideshow-container"
+          aria-label="Featured property slideshow"
+        >
+          <input type="radio" name="slide-1" id="slide-1-1" checked />
+          <input type="radio" name="slide-1" id="slide-1-2" />
+          <input type="radio" name="slide-1" id="slide-1-3" />
+
+          <div class="slide slide-1">
+            <img
+              src="https://i.pinimg.com/736x/2f/84/0a/2f840a0c7425fa1d6ae469dfddaac0c2.jpg"
+              alt="Luxury detached house with a bright exterior"
+            />
+            <div class="text">Luxury Detached</div>
+            <div class="text2">Price 1m/500$</div>
+            <button class="book-now">Book now</button>
+          </div>
+          <div class="slide slide-2">
+            <img
+              src="https://i.pinimg.com/736x/94/68/73/946873fc8afc6525d9b747240401afea.jpg"
+            />
+            <div class="text">Cozy Cottage Retreat</div>
+          </div>
+          <div class="slide slide-3">
+            <img
+              src="https://i.pinimg.com/1200x/82/1a/27/821a27629f3ad7cce55b2eae27d776a2.jpg"
+              alt="Modern villa with a sleek design"
+            />
+            <div class="text">Modern Villa Escape</div>
+          </div>
+
+          <label class="prev prev-1" for="slide-1-3" aria-label="Previous Slide"
+            >&#10094;</label
+          >
+          <label class="next next-1" for="slide-1-2" aria-label="Next Slide"
+            >&#10095;</label
+          >
+          <label class="prev prev-2" for="slide-1-1" aria-label="Previous Slide"
+            >&#10094;</label
+          >
+          <label class="next next-2" for="slide-1-3" aria-label="Next Slide"
+            >&#10095;</label
+          >
+          <label class="prev prev-3" for="slide-1-2" aria-label="Previous Slide"
+            >&#10094;</label
+          >
+          <label class="next next-3" for="slide-1-1" aria-label="Next Slide"
+            >&#10095;</label
+          >
+
+          <div class="slide-dots" aria-label="Slide indicators">
+            <label
+              class="dot"
+              for="slide-1-1"
+              aria-label="Go to slide 1"
+            ></label>
+            <label
+              class="dot"
+              for="slide-1-2"
+              aria-label="Go to slide 2"
+            ></label>
+            <label
+              class="dot"
+              for="slide-1-3"
+              aria-label="Go to slide 3"
+            ></label>
+          </div>
+        </div>
+        <!---slidershow 2-->
+        <div
+          class="slideshow-container"
+          aria-label="Featured property slideshow"
+        >
+          <input type="radio" name="slide-2" id="slide-2-1" checked />
+          <input type="radio" name="slide-2" id="slide-2-2" />
+          <input type="radio" name="slide-2" id="slide-2-3" />
+
+          <div class="slide slide-1">
+            <img
+              src="https://i.pinimg.com/1200x/49/ee/4b/49ee4b2e16745bff3b73107dd8860540.jpg"
+              alt="Featured property preview"
+            />
+            <div class="text">Premium Listing</div>
+            <div class="text2">Price 1m/500$</div>
+            <button class="book-now">Book now</button>
+          </div>
+          <div class="slide slide-2">
+            <img
+              src="https://i.pinimg.com/1200x/ae/42/3c/ae423c44cfd47bd6d61f67f1b82aa772.jpg"
+              alt="Another property preview"
+            />
+          </div>
+          <div class="slide slide-3">
+            <img src="picture/image2.png" alt="Third property preview" />
+          </div>
+
+          <label class="prev prev-1" for="slide-2-3" aria-label="Previous Slide"
+            >&#10094;</label
+          >
+          <label class="next next-1" for="slide-2-2" aria-label="Next Slide"
+            >&#10095;</label
+          >
+          <label class="prev prev-2" for="slide-2-1" aria-label="Previous Slide"
+            >&#10094;</label
+          >
+          <label class="next next-2" for="slide-2-3" aria-label="Next Slide"
+            >&#10095;</label
+          >
+          <label class="prev prev-3" for="slide-2-2" aria-label="Previous Slide"
+            >&#10094;</label
+          >
+          <label class="next next-3" for="slide-2-1" aria-label="Next Slide"
+            >&#10095;</label
+          >
+
+          <div class="slide-dots" aria-label="Slide indicators">
+            <label
+              class="dot"
+              for="slide-2-1"
+              aria-label="Go to slide 1"
+            ></label>
+            <label
+              class="dot"
+              for="slide-2-2"
+              aria-label="Go to slide 2"
+            ></label>
+            <label
+              class="dot"
+              for="slide-2-3"
+              aria-label="Go to slide 3"
+            ></label>
+          </div>
+        </div>
+        <!---slidershow 3-->
+        <div
+          class="slideshow-container"
+          aria-label="Featured property slideshow"
+        >
+          <input type="radio" name="slide-3" id="slide-3-1" checked />
+          <input type="radio" name="slide-3" id="slide-3-2" />
+          <input type="radio" name="slide-3" id="slide-3-3" />
+          <input type="radio" name="slide-3" id="slide-3-4" />
+
+          <div class="slide slide-1">
+            <img
+              src="https://i.pinimg.com/1200x/29/24/d5/2924d5d55a9a5c98471ec773e4d50e6a.jpg"
+              alt="Featured property preview"
+            />
+            <div class="text">Premium Listing</div>
+            <div class="text2">Price 1m/500$</div>
+            <button class="book-now">Book now</button>
+          </div>
+          <div class="slide slide-2">
+            <img
+              src="https://i.pinimg.com/736x/a1/74/dd/a174dd36b0d4884c9be19c591d0e86e6.jpg"
+              alt="Another property preview"
+            />
+            <div class="text">Scenic Villa</div>
+          </div>
+          <div class="slide slide-3">
+            <img
+              src="https://i.pinimg.com/1200x/35/9f/f6/359ff6572e00b7f219bc4ea16b1870b6.jpg"
+              alt="Third property preview"
+            />
+            <div class="text">Modern Estate</div>
+          </div>
+          <div class="slide slide-4">
+            <img
+              src="https://i.pinimg.com/1200x/53/68/33/5368337661832f2b72e67c2edff62fec.jpg"
+              alt="Third property preview"
+            />
+            <div class="text">Modern Estate</div>
+          </div>
+
+          <label class="prev prev-1" for="slide-3-4" aria-label="Previous Slide"
+            >&#10094;</label
+          >
+          <label class="next next-1" for="slide-3-2" aria-label="Next Slide"
+            >&#10095;</label
+          >
+          <label class="prev prev-2" for="slide-3-1" aria-label="Previous Slide"
+            >&#10094;</label
+          >
+          <label class="next next-2" for="slide-3-3" aria-label="Next Slide"
+            >&#10095;</label
+          >
+          <label class="prev prev-3" for="slide-3-2" aria-label="Previous Slide"
+            >&#10094;</label
+          >
+          <label class="next next-3" for="slide-3-4" aria-label="Next Slide"
+            >&#10095;</label
+          >
+          <label class="prev prev-4" for="slide-3-3" aria-label="Previous Slide"
+            >&#10094;</label
+          >
+          <label class="next next-4" for="slide-3-1" aria-label="Next Slide"
+            >&#10095;</label
+          >
+
+          <div class="slide-dots" aria-label="Slide indicators">
+            <label
+              class="dot"
+              for="slide-3-1"
+              aria-label="Go to slide 1"
+            ></label>
+            <label
+              class="dot"
+              for="slide-3-2"
+              aria-label="Go to slide 2"
+            ></label>
+            <label
+              class="dot"
+              for="slide-3-3"
+              aria-label="Go to slide 3"
+            ></label>
+            <label
+              class="dot"
+              for="slide-3-4"
+              aria-label="Go to slide 4"
+            ></label>
+          </div>
+        </div>
+        <!--slidershow 4-->
+        <div
+          class="slideshow-container"
+          aria-label="Featured property slideshow"
+        >
+          <input type="radio" name="slide-4" id="slide-4-1" checked />
+          <input type="radio" name="slide-4" id="slide-4-2" />
+          <input type="radio" name="slide-4" id="slide-4-3" />
+          <input type="radio" name="slide-4" id="slide-4-4" />
+
+          <div class="slide slide-1">
+            <img
+              src="https://i.pinimg.com/736x/7c/32/e9/7c32e95161a3bc9eec587352fca7a31a.jpg"
+              alt="Featured property preview"
+            />
+            <div class="text">Premium Listing</div>
+            <div class="text2">Price 1m/500$</div>
+            <button class="book-now">Book now</button>
+          </div>
+          <div class="slide slide-2">
+            <img
+              src="https://i.pinimg.com/736x/33/1b/6f/331b6f9f7d19897dbf09bde6f8c14415.jpg"
+              alt="Another property preview"
+            />
+            <div class="text">Scenic Villa</div>
+          </div>
+          <div class="slide slide-3">
+            <img
+              src="https://i.pinimg.com/1200x/91/cd/9f/91cd9f995b34b3d147a0551be5d347e0.jpg"
+              alt="Third property preview"
+            />
+            <div class="text">Modern Estate</div>
+          </div>
+          <div class="slide slide-4">
+            <img
+              src="https://i.pinimg.com/736x/72/d7/ad/72d7ad1af23d4de57277c459a4a87aa9.jpg"
+              alt="Third property preview"
+            />
+            <div class="text">Modern Estate</div>
+          </div>
+
+          <label class="prev prev-1" for="slide-4-4" aria-label="Previous Slide"
+            >&#10094;</label
+          >
+          <label class="next next-1" for="slide-4-2" aria-label="Next Slide"
+            >&#10095;</label
+          >
+          <label class="prev prev-2" for="slide-4-1" aria-label="Previous Slide"
+            >&#10094;</label
+          >
+          <label class="next next-2" for="slide-4-3" aria-label="Next Slide"
+            >&#10095;</label
+          >
+          <label class="prev prev-3" for="slide-4-2" aria-label="Previous Slide"
+            >&#10094;</label
+          >
+          <label class="next next-3" for="slide-4-4" aria-label="Next Slide"
+            >&#10095;</label
+          >
+          <label class="prev prev-4" for="slide-4-3" aria-label="Previous Slide"
+            >&#10094;</label
+          >
+          <label class="next next-4" for="slide-4-1" aria-label="Next Slide"
+            >&#10095;</label
+          >
+
+          <div class="slide-dots" aria-label="Slide indicators">
+            <label
+              class="dot"
+              for="slide-4-1"
+              aria-label="Go to slide 1"
+            ></label>
+            <label
+              class="dot"
+              for="slide-4-2"
+              aria-label="Go to slide 2"
+            ></label>
+            <label
+              class="dot"
+              for="slide-4-3"
+              aria-label="Go to slide 3"
+            ></label>
+            <label
+              class="dot"
+              for="slide-4-4"
+              aria-label="Go to slide 4"
+            ></label>
+          </div>
+        </div>
+      </div>
+
+      <section id="Contact">
+        <div class="Agent">Our Agent</div>
+        <div class="C-title">
+          Our team of experienced professionals is dedicated to helping you find
+          your perfect property.
+        </div>
+      </section>
+
+      <section>
+        <div class="Agent-team">
+          <div class="c-agent">
+            <img
+              src="https://i.pinimg.com/736x/10/96/f6/1096f66d775688b4e9b69500b2b9ac03.jpg"
+              alt=""
+            />
+
+            <h3 class="A-card-title">Emily Joninas</h3>
+            <div class="A-cart-title2">Senior Partner</div>
+            <p class="text-primary">$500M+ in sales</p>
+            <p class="text3">
+              With over 15 years of experience in luxury real estate, Sarah has
+              closed over $500 million in sales. She specializes in high-end
+              Manhattan properties and waterfront estates.
+            </p>
+
+            <div class="contact-buttons">
+              <i class="material-icons">call</i>
+              <i class="material-icons">textsms</i>
+            </div>
+          </div>
+          <div class="c-agent">
+            <img
+              src="https://i.pinimg.com/736x/58/6a/8a/586a8aaf461f8ff54fe5a0cd4bd762da.jpg"
+              alt=""
+            />
+
+            <h3 class="A-card-title">Kim Jenny</h3>
+            <div class="A-cart-title2">Senior Agent</div>
+            <p class="text-primary">$450M+ in sales</p>
+            <p class="text3">
+              Jenny brings a data-driven approach to real estate, helping
+              clients find properties that are not just homes but smart
+              investments. Specializing in Brooklyn and emerging markets.
+            </p>
+
+            <div class="contact-buttons">
+              <i class="material-icons">call</i>
+              <i class="material-icons">textsms</i>
+            </div>
+          </div>
+          <div class="c-agent">
+            <img
+              src="https://i.pinimg.com/736x/ab/3c/73/ab3c735baa0ad0a3cefa1de67dbf2abc.jpg"
+              alt=""
+            />
+
+            <h3 class="A-card-title">Cha Eunwoo</h3>
+            <div class="A-cart-title2">Agent</div>
+            <p class="text-primary">$400M+ in sales</p>
+            <p class="text3">
+              Eunwoo's background in interior design gives her clients a unique
+              advantage when evaluating properties. She has an eye for potential
+              and a talent for matching clients with their perfect homes.
+            </p>
+
+            <div class="contact-buttons">
+              <i class="material-icons">call</i>
+              <i class="material-icons">textsms</i>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h2>LIVEST</h2>
+          <p>
+            Your trusted partner for premium real estate, expert agents, and a
+            seamless path to owning your dream home.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <div>
+            <h4>Quick Links</h4>
+            <a href="#">Home</a>
+            <a href="#">Properties</a>
+            <a href="#">Loan</a>
+            <a href="#">Contact</a>
+          </div>
+          <div>
+            <h4>Contact</h4>
+            <p>123 Dream Street, City</p>
+            <p>info@livestrealty.com</p>
+            <p>+1 (555) 123-4567</p>
+          </div>
+        </div>
+
+        <div class="footer-newsletter">
+          <h4>Stay Updated</h4>
+          <p>
+            Subscribe to receive the latest listings, market tips, and exclusive
+            offers.
+          </p>
+          <form>
+            <input type="email" placeholder="Enter your email" />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 LIVEST. All rights reserved.</p>
+        <p>Designed with care for your dream home.</p>
+      </div>
+    </footer>
+  </body>
+</html>

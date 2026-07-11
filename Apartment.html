@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="LIVEST real estate offering premium homes, expert agents, and market insights."
+    />
+    <title>Real Estate</title>
+    <link rel="stylesheet" href="home.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <body>
+    <!-- 1. HEADER NAVIGATION -->
+    <header>
+      <div class="header-left">
+        <label for="sidebar-toggle" class="menu-toggle" aria-label="Open menu">
+          ☰
+        </label>
+        <span class="logo"><h2>LIVEST</h2></span>
+      </div>
+
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="index.html#home-cards">Properties</a>
+          </li>
+          <li><a href="index.html#loan">Loan</a></li>
+          <li><a href="index.html#About">About</a></li>
+          <li><a href="index.html#Contact">Contact</a></li>
+          <li><label for="login-modal-toggle" class="login">Login</label></li>
+        </ul>
+      </nav>
+    </header>
+
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-checkbox" />
+    <label
+      for="sidebar-toggle"
+      class="sidebar-backdrop"
+      aria-label="Close menu"
+    ></label>
+    <aside class="sidebar" aria-label="Sidebar navigation">
+      <label for="sidebar-toggle" class="sidebar-close" aria-label="Close menu">
+        ×
+      </label>
+      <div class="sidebar-brand">
+        <span class="sidebar-logo">LIVEST</span>
+        <span class="sidebar-tag">Real Estate</span>
+      </div>
+
+      <h3>Menu</h3>
+     <a href="index.html">Home</a>
+      <a href="index.html#home-cards">Properties</a>
+
+      <a href="index.html#loan">Loan</a>
+      <a href="index.html#About">About</a>
+      <a href="index.html#Contact">Contact</a>
+      <label for="login-modal-toggle" class="login">Login</label>
+    </aside>
+
+    <!-- LOGIN MODAL CHECKBOX AND POPUP -->
+    <input type="checkbox" id="login-modal-toggle" class="modal-checkbox" />
+    <div class="login-modal">
+      <div class="modal-content">
+        <label for="login-modal-toggle" class="modal-close">&times;</label>
+        <h2>Login to Your Account</h2>
+        <form class="login-form">
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+          <label class="remember-me">
+            <input type="checkbox" /> Remember me
+          </label>
+          <button type="submit" class="btn-login">Log In</button>
+          <p class="signup-link">
+            Don't have an account? <a href="#">Sign up here</a>
+          </p>
+        </form>
+      </div>
+    </div>
+    <section id="Top" class="back-to-top-section">
+      <div class="broadcom">
+        <h1 class="broadcom-title">Categories</h1>
+      </div>
+      <div class="broadcom-banner">
+        <img
+          src="https://i.pinimg.com/1200x/c0/18/63/c01863c2519297f5c7151d905db066b4.jpg"
+          alt=""
+        />
+      </div>
+    </section>
+    <section class="clicks">
+       <button class="Click1 active"><a href="Apartment.html">Apartment</a></button>
+        <button class="Click1"><a href="Commercial.html">Commercial</a></button>
+         <button class="Click1"><a href="Soloshop.html">Solo Shop</a></button>
+          <button class="Click1"><a href="Town-Ship.html">Town Ship</a></button>
+
+    </section>
+    
+    <main>
+
+      <div class="name-apart"><a href="Apartment.html"></a>Apartment</div>
+      <section class="apart">
+       <!--Product1-->
+        <article class="New-item-card">
+          <div class="New-item">
+            <img
+              src="picture/APT1.png"
+              alt="Modern Luxury Apartment Complex"
+            />
+          </div>
+
+          <h3 class="name-house">Downtown Office Tower</h3>
+          <p class="Price-tag">Price <b>$2,500,000</b></p>
+
+          <hr class="separater" />
+
+          <div class="property-specs">
+            <div class="spec-item">
+              <img
+                src="https://cdn.prod.website-files.com/67e52cef986818f7b1af44e1/67ea2976440d1e8e05e3cc9e_1%20(1).svg"
+                alt=""
+              /><b>3 Beds</b>
+            </div>
+            <div class="spec-item">
+              <img
+                src="https://cdn.prod.website-files.com/67e52cef986818f7b1af44e1/67ea29a61ac3a50582f56963_bath.svg"
+                alt=""
+              /><b>4 Baths </b>
+            </div>
+            <div class="spec-item">
+              <img
+                loading="lazy"
+                src="https://cdn.prod.website-files.com/67e52cef986818f7b1af44e1/67ea2992da52f92f37046490_1%20(3).svg"
+                alt=""
+              /><b>SQR =1500FT </b>
+            </div>
+          </div>
+          <p class="location-pin">
+            <span class="material-icons">location_on</span> Phnom Penh, Cambodia
+          </p>
+
+          <label for="purchase-modal-11" class="buynow">Buy Now</label>
+        </article>
+<!--for popup details -->
+        <input type="checkbox" id="purchase-modal-11" class="modal-checkbox" />
+        <div class="purchase-modal">
+          <div class="purchase-panel">
+            <label
+              for="purchase-modal-11"
+              class="modal-close"
+              aria-label="Close"
+              >×</label
+            >
+            <div class="product-media">
+              <img
+                src="picture/APT1.png"
+                alt="Downtown Office Tower"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Downtown Office Tower</h3>
+              <div class="meta"><a href="#">See all item details</a></div>
+              <div class="product-options">
+                <label for="qty-11">Qty:</label>
+                <select id="qty-11" class="qty-select">
+                  <option>1</option>
+                </select>
+              </div>
+              <div class="product-price">
+                <span class="price-currency">$</span
+                ><span class="price-amount">2,500,000</span
+                ><span class="price-dec">.00</span>
+              </div>
+              <div class="price-breakdown">
+                Secure parking and 24/7 security included
+              </div>
+              <div class="product-actions">
+                <label for="purchase-modal-11" class="btn-ghost">Cancel</label>
+                <button class="btn-primary" type="button">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+           <!--Product2-->
+        <article class="New-item-card">
+          <div class="New-item">
+            <img
+              src="picture/APT2.png"
+              alt="Modern Luxury Apartment Complex"
+            />
+          </div>
+
+          <h3 class="name-house">Retail Frontage Plaza</h3>
+          <p class="Price-tag">Price <b>$850,000</b></p>
+
+          <hr class="separater" />
+
+          <div class="property-specs">
+            <div class="spec-item">
+              <img
+                src="https://cdn.prod.website-files.com/67e52cef986818f7b1af44e1/67ea2976440d1e8e05e3cc9e_1%20(1).svg"
+                alt=""
+              /><b>3 Beds</b>
+            </div>
+            <div class="spec-item">
+              <img
+                src="https://cdn.prod.website-files.com/67e52cef986818f7b1af44e1/67ea29a61ac3a50582f56963_bath.svg"
+                alt=""
+              /><b>4 Baths </b>
+            </div>
+            <div class="spec-item">
+              <img
+                src="https://cdn.prod.website-files.com/67e52cef986818f7b1af44e1/67ea2992da52f92f37046490_1%20(3).svg"
+                alt=""
+              /><b>SQR =1500FT </b>
+            </div>
+          </div>
+          <p class="location-pin">
+            <span class="material-icons">location_on</span> Phnom Penh, Cambodia
+          </p>
+
+          <label for="purchase-modal-12" class="buynow">Buy Now</label>
+        </article>
+<!--for popup details -->
+        <input type="checkbox" id="purchase-modal-12" class="modal-checkbox" />
+        <div class="purchase-modal">
+          <div class="purchase-panel">
+            <label
+              for="purchase-modal-12"
+              class="modal-close"
+              aria-label="Close"
+              >×</label
+            >
+            <div class="product-media">
+              <img
+                src="picture/APT2.png"
+                alt="Retail Frontage Plaza"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Retail Frontage Plaza</h3>
+              <div class="meta"><a href="#">See all item details</a></div>
+              <div class="product-options">
+                <label for="qty-12">Qty:</label>
+                <select id="qty-12" class="qty-select">
+                  <option>1</option>
+                </select>
+              </div>
+              <div class="product-price">
+                <span class="price-currency">$</span
+                ><span class="price-amount">850,000</span
+                ><span class="price-dec">.00</span>
+              </div>
+              <div class="price-breakdown">
+                Secure parking and 24/7 security included
+              </div>
+              <div class="product-actions">
+                <label for="purchase-modal-12" class="btn-ghost">Cancel</label>
+                <button class="btn-primary" type="button">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+   <!--Product3-->
+        <article class="New-item-card">
+          <div class="New-item">
+            <img
+              src="picture/APT3.png"
+              alt="Modern Luxury Apartment Complex"
+            />
+          </div>
+
+          <h3 class="name-house">Industrial Warehouse Hub</h3>
+          <p class="Price-tag">Price <b>$1,200,000</b></p>
+
+          <hr class="separater" />
+          <div class="property-specs">
+            <div class="spec-item">
+              <img
+                src="https://cdn.prod.website-files.com/67e52cef986818f7b1af44e1/67ea2976440d1e8e05e3cc9e_1%20(1).svg"
+                alt=""
+              /><b>3 Beds</b>
+            </div>
+            <div class="spec-item">
+              <img
+                src="https://cdn.prod.website-files.com/67e52cef986818f7b1af44e1/67ea29a61ac3a50582f56963_bath.svg"
+                alt=""
+              /><b>4 Baths </b>
+            </div>
+            <div class="spec-item">
+              <img
+                src="https://cdn.prod.website-files.com/67e52cef986818f7b1af44e1/67ea2992da52f92f37046490_1%20(3).svg"
+                alt=""
+              /><b>SQR =1500FT </b>
+            </div>
+          </div>
+          <p class="location-pin">
+            <span class="material-icons">location_on</span> Phnom Penh, Cambodia
+          </p>
+
+          <label for="purchase-modal-13" class="buynow">Buy Now</label>
+        </article>
+<!--for popup details -->
+        <input type="checkbox" id="purchase-modal-13" class="modal-checkbox" />
+        <div class="purchase-modal">
+          <div class="purchase-panel">
+            <label
+              for="purchase-modal-13"
+              class="modal-close"
+              aria-label="Close"
+              >×</label
+            >
+            <div class="product-media">
+              <img
+                src="picture/APT3.png3.png"
+                alt="Industrial Warehouse Hub"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Industrial Warehouse Hub</h3>
+              <div class="meta"><a href="#">See all item details</a></div>
+              <div class="product-options">
+                <label for="qty-13">Qty:</label>
+                <select id="qty-13" class="qty-select">
+                  <option>1</option>
+                </select>
+              </div>
+              <div class="product-price">
+                <span class="price-currency">$</span
+                ><span class="price-amount">1,200,000</span
+                ><span class="price-dec">.00</span>
+              </div>
+              <div class="price-breakdown">
+                Secure parking and 24/7 security included
+              </div>
+              <div class="product-actions">
+                <label for="purchase-modal-13" class="btn-ghost">Cancel</label>
+                <button class="btn-primary" type="button">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+           <!--Product4-->
+          <article class="New-item-card">
+          <div class="New-item">
+            <img
+              src="picture/APT4.png"
+              alt="Modern Luxury Apartment Complex"
+            />
+          </div>
+
+          <h3 class="name-house">Business Park Complex</h3>
+          <p class="Price-tag">Price <b>$3,100,000</b></p>
+
+          <hr class="separater" />
+
+          <div class="property-specs">
+            <div class="spec-item">
+              <img
+                src="https://cdn.prod.website-files.com/67e52cef986818f7b1af44e1/67ea2976440d1e8e05e3cc9e_1%20(1).svg"
+                alt=""
+              /><b>3 Beds</b>
+            </div>
+            <div class="spec-item">
+              <img
+                src="https://cdn.prod.website-files.com/67e52cef986818f7b1af44e1/67ea29a61ac3a50582f56963_bath.svg"
+                alt=""
+              /><b>4 Baths </b>
+            </div>
+            <div class="spec-item">
+              <img
+                loading="lazy"
+                src="https://cdn.prod.website-files.com/67e52cef986818f7b1af44e1/67ea2992da52f92f37046490_1%20(3).svg"
+                alt=""
+              /><b>SQR =1500FT </b>
+            </div>
+          </div>
+          <p class="location-pin">
+            <span class="material-icons">location_on</span> Phnom Penh, Cambodia
+          </p>
+
+          <label for="purchase-modal-14" class="buynow">Buy Now</label>
+        </article>
+<!--for popup details -->
+        <input type="checkbox" id="purchase-modal-14" class="modal-checkbox" />
+        <div class="purchase-modal">
+          <div class="purchase-panel">
+            <label
+              for="purchase-modal-14"
+              class="modal-close"
+              aria-label="Close"
+              >×</label
+            >
+            <div class="product-media">
+              <img
+                src="picture/APT4.png"
+                alt="Business Park Complex"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Business Park Complex</h3>
+              <div class="meta"><a href="#">See all item details</a></div>
+              <div class="product-options">
+                <label for="qty-14">Qty:</label>
+                <select id="qty-14" class="qty-select">
+                  <option>1</option>
+                </select>
+              </div>
+              <div class="product-price">
+                <span class="price-currency">$</span
+                ><span class="price-amount">3,100,000</span
+                ><span class="price-dec">.00</span>
+              </div>
+              <div class="price-breakdown">
+                Secure parking and 24/7 security included
+              </div>
+              <div class="product-actions">
+                <label for="purchase-modal-14" class="btn-ghost">Cancel</label>
+                <button class="btn-primary" type="button">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+           <!--Product5-->
+          <article class="New-item-card">
+          <div class="New-item">
+            <img
+              src="picture/APT5.png"
+              alt="Modern Luxury Apartment Complex"
+            />
+          </div>
+
+          <h3 class="name-house">Medical Center Building</h3>
+          <p class="Price-tag">Price <b>$1,800,000</b></p>
+
+          <hr class="separater" />
+
+          <div class="property-specs">
+            <div class="spec-item">
+              <img
+                src="https://cdn.prod.website-files.com/67e52cef986818f7b1af44e1/67ea2976440d1e8e05e3cc9e_1%20(1).svg"
+                alt=""
+              /><b>3 Beds</b>
+            </div>
+            <div class="spec-item">
+              <img
+                src="https://cdn.prod.website-files.com/67e52cef986818f7b1af44e1/67ea29a61ac3a50582f56963_bath.svg"
+                alt=""
+              /><b>4 Baths </b>
+            </div>
+            <div class="spec-item">
+              <img
+                loading="lazy"
+                src="https://cdn.prod.website-files.com/67e52cef986818f7b1af44e1/67ea2992da52f92f37046490_1%20(3).svg"
+                alt=""
+              /><b>SQR =1500FT </b>
+            </div>
+          </div>
+          <p class="location-pin">
+            <span class="material-icons">location_on</span> Phnom Penh, Cambodia
+          </p>
+
+          <label for="purchase-modal-15" class="buynow">Buy Now</label>
+        </article>
+<!--for popup details -->
+        <input type="checkbox" id="purchase-modal-15" class="modal-checkbox" />
+        <div class="purchase-modal">
+          <div class="purchase-panel">
+            <label
+              for="purchase-modal-15"
+              class="modal-close"
+              aria-label="Close"
+              >×</label
+            >
+            <div class="product-media">
+              <img
+                src="picture/APT5.png"
+                alt="Medical Center Building"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Medical Center Building</h3>
+              <div class="meta"><a href="#">See all item details</a></div>
+              <div class="product-options">
+                <label for="qty-15">Qty:</label>
+                <select id="qty-15" class="qty-select">
+                  <option>1</option>
+                </select>
+              </div>
+              <div class="product-price">
+                <span class="price-currency">$</span
+                ><span class="price-amount">1,800,000</span
+                ><span class="price-dec">.00</span>
+              </div>
+              <div class="price-breakdown">
+                Secure parking and 24/7 security included
+              </div>
+              <div class="product-actions">
+                <label for="purchase-modal-15" class="btn-ghost">Cancel</label>
+                <button class="btn-primary" type="button">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    </main>
+
+
+
+     <footer class="site-footer">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h2>LIVEST</h2>
+          <p>
+            Your trusted partner for premium real estate, expert agents, and a
+            seamless path to owning your dream home.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <div>
+            <h4>Quick Links</h4>
+            <a href="#">Home</a>
+            <a href="#">Properties</a>
+            <a href="#">Loan</a>
+            <a href="#">Contact</a>
+          </div>
+          <div>
+            <h4>Contact</h4>
+            <p>123 Dream Street, City</p>
+            <p>info@livestrealty.com</p>
+            <p>+1 (555) 123-4567</p>
+          </div>
+        </div>
+
+        <div class="footer-newsletter">
+          <h4>Stay Updated</h4>
+          <p>
+            Subscribe to receive the latest listings, market tips, and exclusive
+            offers.
+          </p>
+          <form>
+            <input type="email" placeholder="Enter your email" />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 LIVEST. All rights reserved.</p>
+        <p>Designed with care for your dream home.</p>
+      </div>
+  </body>
+</html>
