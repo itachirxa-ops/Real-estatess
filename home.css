@@ -281,6 +281,8 @@ nav ul li {
 /* --- Features Section (Hero Split Content Below Banner) --- */
 /* This is the "We Help You To Find Your Dream Home" section with images on the left and text/stats on the right. */
 .hero-section {
+  position:relative;
+  top:100px
   font-family: "Plus Jakarta Sans", sans-serif;
   display: flex;
   align-items: center;
