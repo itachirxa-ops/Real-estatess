@@ -18,6 +18,7 @@ body {
 }
 
 /* --- Navigation / Header Layout --- */
+/* This styles the main fixed header that stays at the top of the page. */
 header {
   will-change: transform, opacity;
   backface-visibility: hidden;
@@ -45,6 +46,7 @@ header {
 }
 
 /* --- Sidebar (off-canvas) --- */
+/* This section controls the mobile-first off-canvas menu. It uses a checkbox "hack" to toggle visibility without JavaScript. */
 .menu-toggle {
   display: flex;
   align-items: center;
@@ -72,7 +74,7 @@ header {
 
 .sidebar {
   position: fixed;
-  top: 0;
+  top: 0; /* Starts hidden off-screen */
   left: -320px;
   width: 320px;
   height: 100vh;
@@ -178,6 +180,7 @@ nav ul li {
 }
 
 /* --- Hero Banner Container (The Top Section) --- */
+/* This is the main full-screen banner at the top of the homepage. */
 .hero-banner-container {
   position: relative;
   height: 100vh; /* Takes full screen height */
@@ -192,13 +195,13 @@ nav ul li {
   background-position: center;
 }
 
-/* Overlay elements that sit cleanly over the background banner */
+/* Centered text and titles that overlay the hero banner. */
 .home {
   display: flex;
   justify-content: center;
   position: absolute;
   width: 100%;
-  top: 40%;
+  top: 30%;
   left: 0;
   pointer-events: none;
   font-weight: bold;
@@ -219,13 +222,12 @@ nav ul li {
   justify-content: center;
   position: absolute;
   width: 100%;
-  top: 50%;
+  top: 40%;
   left: 0;
   pointer-events: none;
   text-align: center;
   color: azure;
-  font-size: clamp(20px, 4vw, 32px);
-  font-style: oblique;
+  font-size: 30px;
 }
 
 .mid p {
@@ -233,7 +235,7 @@ nav ul li {
   justify-content: center;
   position: absolute;
   width: 100%;
-  top: 60%;
+  top: 50%;
   left: 0;
   pointer-events: none;
   color: rgb(255, 254, 252);
@@ -243,7 +245,7 @@ nav ul li {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Form Search/Input Box Overlap */
+/* The search filter box that overlaps the bottom of the hero banner. */
 .box {
   display: flex;
   position: absolute;
@@ -277,7 +279,7 @@ nav ul li {
 }
 
 /* --- Features Section (Hero Split Content Below Banner) --- */
-
+/* This is the "We Help You To Find Your Dream Home" section with images on the left and text/stats on the right. */
 .hero-section {
   font-family: "Plus Jakarta Sans", sans-serif;
   display: flex;
@@ -290,6 +292,7 @@ nav ul li {
 }
 @layer base;
 
+/* Grid layout for the three animated images. The grid template columns change on hover to create a zoom effect. */
 .hero-image-column {
   display: grid;
   grid-template: 1fr / 1fr 1fr 1fr;
@@ -388,6 +391,7 @@ nav ul li {
 }
 
 /* --- "Why Choose Us" Grid Section --- */
+/* This section contains the property categories (Apartment, Commercial, etc.) displayed in a grid over a background image. */
 :root {
   --wcu-bg: #ffffff;
   --wcu-title: #3a2317;
@@ -419,12 +423,10 @@ nav ul li {
   color: var(--wcu-subtitle);
 }
 
-/* 1. The full-width outer container */
+/* The full-width outer container for the "Why Choose Us" section, with a background image. */
 .wcu-section {
   width: 100%;
   padding: 350px 0; /* Controls the space above/below the cards */
-
-  /* Move background properties here */
   background-image: url("https://i.pinimg.com/1200x/11/fc/99/11fc996fb3299cc713cee4027912d209.jpg"); /* Your image link */
   background-position: center;
   background-repeat: no-repeat;
@@ -432,7 +434,7 @@ nav ul li {
   margin-top: 20%;
 }
 
-/* 2. The inner grid holding the cards */
+/* The inner grid that holds the category cards. */
 .wcu-grid {
   display: grid;
   /* Forces columns to stay responsive and never spill out */
@@ -486,6 +488,7 @@ nav ul li {
   color: var(--wcu-card-text);
 }
 
+/* --- Property Listings Grid --- */
 .home-card {
   width: 100%;
   max-width: 1200px;
@@ -561,6 +564,7 @@ nav ul li {
   margin-top: 20px;
   padding: 10px;
 }
+/* --- Agent Section --- */
 .Agent {
   margin-top: 80px;
   text-align: center;
@@ -626,6 +630,7 @@ nav ul li {
   font-size: smaller;
 }
 
+/* --- "Buy Now" Button Styling --- */
 .buynow {
   --color: #00a97f;
   --color2: rgb(10, 25, 30);
@@ -674,6 +679,8 @@ nav ul li {
   background: #3a0ca3;
   transition: background 0s;
 }
+
+/* --- "For Rent" Slideshow Section --- */
 .forrent {
   text-align: center;
   font-size: 50px;
@@ -689,7 +696,7 @@ nav ul li {
   text-align: center;
   margin-top: 30px;
 }
-/* Viewport constraints */
+/* Container for all the slideshows. */
 .slidershow {
   display: flex;
   gap: 24px;
@@ -700,6 +707,7 @@ nav ul li {
   margin-top: 50px;
 }
 
+/* Individual slideshow container. Uses radio inputs for a CSS-only slider. */
 .slideshow-container {
   position: relative;
   width: min(100%, 420px);
@@ -943,6 +951,7 @@ nav ul li {
   transform: scale(1.15);
 }
 
+/* --- Footer --- */
 .site-footer {
   width: 100%;
   padding: 100px 55px;
@@ -1048,8 +1057,8 @@ nav ul li {
   flex-wrap: wrap;
 }
 
-/*.
- --- Media Queries (Adaptive adjustments for Tablets & Phones) --- */
+/* --- Media Queries (Responsive Design) --- */
+/* Adjustments for tablets and smaller desktops. */
 @media (max-width: 992px) {
   header {
     width: 95%;
@@ -1086,6 +1095,7 @@ nav ul li {
   }
 }
 
+/* Adjustments for mobile phones. */
 @media (max-width: 600px) {
   nav ul {
     flex-wrap: wrap;
@@ -1137,8 +1147,7 @@ nav ul li {
 }
 
 /* --- LOGIN MODAL POPUP (CSS-ONLY, No JavaScript) --- */
-
-/* Hide the checkbox input */
+/* This section creates a modal popup for the login form using only HTML and CSS, triggered by a hidden checkbox. */
 .modal-checkbox {
   display: none;
 }
@@ -1269,6 +1278,7 @@ nav ul li {
 }
 
 /* --- Enhanced CSS-only Product Modal --- */
+/* This styles the "Buy Now" modal for each property. Like the login modal, it's a CSS-only implementation using checkboxes. */
 .purchase-modal {
   position: fixed;
   inset: 0;
@@ -1421,6 +1431,7 @@ nav ul li {
   }
 }
 
+/* Tablet and below adjustments for category pages. */
 @media (max-width: 768px) {
   .apart {
     grid-template-columns: 1fr !important; /* Stacks cards into 1 column */
@@ -1452,6 +1463,8 @@ nav ul li {
   background: #f0e6ff;
   border-color: blueviolet;
 }
+/* --- Category Page Specific Styles (Apartment, Commercial, etc.) --- */
+/* Grid container for property listings on category pages. */
 /* This applies to laptops and desktops by default */
 .apart {
   background: transparent; /* Or remove if you don't want a background color */
@@ -1471,6 +1484,7 @@ nav ul li {
   position: relative;
   top: 40px;
 }
+/* Banner and title styles for category pages. */
 .back-to-top-section {
   position: relative;
   margin-top: 140px;
@@ -1488,6 +1502,7 @@ nav ul li {
   text-align: center;
   font-size: 70px;
 }
+/* Individual property card styles for category pages. */
 .New-item img {
   width: 400px;
   height: 300px;
@@ -1544,6 +1559,7 @@ nav ul li {
   margin-top: 10px;
   font-weight: bold;
 }
+/* Category filter buttons (Apartment, Commercial, etc.) */
 .clicks {
   display: flex;
   justify-content: center;
