@@ -290,7 +290,7 @@ nav ul li {
   margin: 120px auto 60px auto; /* Changed absolute to natural margin block flow */
   gap: 40px;
   position: relative;
-  top: 100px;
+  top: 40px;
 }
 @layer base;
 
